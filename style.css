@@ -92,16 +92,17 @@ body {
     }
 }
 #fin1{
-    margin-top: 100px;
+    margin-top: 160px;
     position: absolute;
     left: 19%;
+    width: 900px;
     right: 40%;
     top: 50%;
     z-index: 2;
 }
 #blockchain{
     position: absolute;
-    top: 130%;
+    top: 160%;
     margin: 20px 20px;
     width: 50%;
     left: 0px;
@@ -118,7 +119,7 @@ body {
 #online{
     margin: 20px 20px;
     position: absolute;
-    top: 160%;
+    top: 200%;
     right: 0px;
     width: 50%;
     font-weight: bold;
@@ -134,7 +135,7 @@ body {
 #crowd{
     margin: 20px 20px;
     position: absolute;
-    top: 180%;
+    top: 250%;
     width: 50%;
     left: 0px;
     font-weight: bold;
