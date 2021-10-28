@@ -150,7 +150,7 @@ body {
 }
 #footer{
     position: absolute;
-    top: 250px;
+    bottom: 0px;
     margin-top: 1900px;
     text-align: center;
     width: 100%;
