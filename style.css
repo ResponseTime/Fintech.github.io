@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Dancing+Script&family=Zen+Kurenaido&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -12,23 +13,40 @@ body {
     padding: 20px 20px;
     color: rgb(75, 47, 75);
     cursor: pointer;
+    text-shadow: 10px 1px pink;
+}
+#nav{
+    position: sticky;
+    top: 0px;
+    z-index: 2;
 }
 #nav ul{
     display: flex;
     position: absolute;
     padding:10px 20px;
     right: 0px;
+    flex-flow: row wrap;
+    align-items: center;
+    background-color: gray;
+    border-bottom-left-radius: 20px;
     justify-content: flex-end;
+    animation: change 2s ease-in 0s infinite alternate;
+    z-index: 2;
+}
+@keyframes change {
+    from { background-color: gray;}
+    to{ background-color: rgb(68, 63, 63);}
 }
 #nav ul li{
     list-style: none;
     padding: 10px 20px;
 }
 #nav ul li a{
+    font-family: 'Zen Kurenaido', sans-serif;
     text-decoration: none;
     color: black;
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding: 10px 20px;
     border-radius: 22px;
 }
@@ -55,4 +73,31 @@ body {
     background-color: gray;
     color: #ddd;
     transition: 0.5s ease-in;
+}
+#arrow-head{
+    border-bottom: 100px solid black;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    width: 0;
+    height: 0;
+    margin: 10px 80px;
+    margin-bottom: 100px;
+    animation: arrowup 1s ease-in 0s 2 forwards;
+}
+@keyframes arrowup {
+    from{ 
+        position : absolute;
+        top: 200px;
+    }
+    to{ 
+        top: 10px;
+    }
+}
+#fin1{
+    margin-top: 100px;
+    position: absolute;
+    left: 19%;
+    right: 40%;
+    top: 50%;
+    z-index: -1;
 }
