@@ -5,6 +5,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior: smooth;
+}
 body {
     background-color: #ddd;
 }
@@ -14,11 +17,6 @@ body {
     color: rgb(75, 47, 75);
     cursor: pointer;
     text-shadow: 10px 1px pink;
-}
-#nav{
-    position: sticky;
-    top: 0px;
-    z-index: 2;
 }
 #nav ul{
     display: flex;
@@ -82,7 +80,7 @@ body {
     height: 0;
     margin: 10px 80px;
     margin-bottom: 100px;
-    animation: arrowup 1s ease-in 0s 2 forwards;
+    animation: arrowup 1s ease-in 0s 4 forwards;
 }
 @keyframes arrowup {
     from{ 
@@ -99,5 +97,60 @@ body {
     left: 19%;
     right: 40%;
     top: 50%;
-    z-index: -1;
+    z-index: 2;
+}
+#blockchain{
+    position: absolute;
+    top: 130%;
+    margin: 20px 20px;
+    width: 50%;
+    left: 0px;
+    font-weight: bold;
+    border: 2px dotted #ccc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 60px;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+#blockchain>h1{
+    text-align: center;
+}
+#online{
+    margin: 20px 20px;
+    position: absolute;
+    top: 160%;
+    right: 0px;
+    width: 50%;
+    font-weight: bold;
+    border: 2px dotted #ccc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 60px;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+#online>h1{
+    text-align: center;
+}
+#crowd{
+    margin: 20px 20px;
+    position: absolute;
+    top: 180%;
+    width: 50%;
+    left: 0px;
+    font-weight: bold;
+    border: 2px dotted #ccc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 20px 60px;
+    line-height: 40px;
+    font-size: 1.5rem;
+}
+#crowd>h1{
+    text-align: center;
+}
+#footer{
+    position: absolute;
+    top: 250px;
+    margin-top: 1900px;
+    text-align: center;
+    width: 100%;
 }
