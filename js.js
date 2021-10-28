@@ -14,3 +14,5 @@ heading.addEventListener('click', function(e) {
         heading.innerHTML = "WHAT IS<br>&emsp;&emsp;&emsp;FINTECH&emsp14;?"
     }
 });
+
+// Finished
